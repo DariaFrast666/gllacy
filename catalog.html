@@ -3,26 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-nav-logo">
-          <img src="" alt="Логотип сайта Глейси">
+          <img src="images/logotype.svg" alt="Логотип сайта Глейси">
         </a>
         <ul class="main-nav-list">
           <li class="main-nav-item">
-            <a href="" class="main-nav-link">Каталог</a>
+            <a href="#" class="main-nav-link">Каталог</a>
           </li>
           <li class="main-nav-item">
-            <a href="" class="main-nav-link">Доставка и оплата</a>
+            <a href="#" class="main-nav-link">Доставка и оплата</a>
           </li>
           <li class="main-nav-item">
-            <a href="" class="main-nav-link">О компании</a>
+            <a href="#" class="main-nav-link">О компании</a>
           </li>
         </ul>
         <p class="main-nav-phone">
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
         </p>
         <ul class="main-user-list">
           <li class="main-user-list">
@@ -64,7 +66,7 @@
         <form action="https://echo.htmlacademy.ru/" class="catalog-filter">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Сортировка:</legend>
-            <select name="select">
+            <select class="catalog-select" name="select">
               <option value="popular" selected>По популярности</option>
               <option value="cost">По цене</option>
             </select>

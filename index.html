@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -22,7 +24,7 @@
           </li>
         </ul>
         <p class="main-nav-phone">
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
         </p>
         <ul class="main-user-list">
           <li class="main-user-list">
@@ -47,7 +49,7 @@
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <ul class="slider-list">
         <li class="slider-item">
-          <h2 class="slider-title title">Нежный пломбир с клубничным джемом</h2>
+          <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
           <p class="slider-description">Натуральное мороженое из свежих сливок
             и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
           <button class="slider-button" type="button">Заказать</button>
@@ -296,8 +298,10 @@
 
       <article class="blog">
         <p class="blog-text">Новое в нашем блоге</p>
-        <a href=""><h3 class="blog-title">10 способов сервировки фруктовых щербетов
-          к столу</h3></a>
+        <a class="blog-title-link" href="#">
+          <h3 class="blog-title">10 способов сервировки фруктовых щербетов
+          к столу</h3>
+        </a>
       </article>
 
       <section class="subscribe">
@@ -334,12 +338,15 @@
       </section>
 
       <section class="address">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="address-text">Адрес главного офиса и офлайн-магазина:</p>
-        <p class="address-text--bold">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <p class="address-text">Для заказов по телефону:</p>
-        <p class="address-text--small">(с 10 до 20 ежедневно)</p>
-        <button class="button" type="submit">Форма обратной связи</button>
+        <div class="address-container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="address-text">Адрес главного офиса и офлайн-магазина:</p>
+          <p class="address-text--bold">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <p class="address-text">Для заказов по телефону:</p>
+          <p class="address-text--bold">+7 (812) 812-12-12</p>
+          <p class="address-text--small">(с 10 до 20 ежедневно)</p>
+          <button class="button" type="submit">Форма обратной связи</button>
+        </div>
       </section>
     </main>
 

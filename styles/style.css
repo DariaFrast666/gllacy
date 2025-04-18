@@ -22,12 +22,24 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #565c66;
   background-color: #feafc3;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .page-header {
@@ -40,6 +52,13 @@ body {
   color: inherit;
   line-height: 20px;
   text-decoration: none;
+}
+
+.main-navigation {
+  width: 1170px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .phone-link {
@@ -95,6 +114,9 @@ body {
 
 .popular-taste-item {
   background-color: #fcfcfc;
+  width: 270px;
+  min-height: 281px;
+  border-radius: 8px;
 }
 
 .taste-price {
@@ -110,18 +132,33 @@ body {
 
 .blog {
   background-color: #ffffff;
+  width: 570px;
+  min-height: 224px;
+  background-image: url("../images/blog.jpg");
+  border-radius: 16px;
 }
 
 .subscribe {
   background-color: #ffffff;
+  width: 570px;
+  min-height: 224px;
+  border-radius: 16px;
 }
 
 .delivery {
   background-color: #fcfcfc;
+  width: 1170px;
+  min-height: 534px;
+  border-radius: 16px;
+  background-image: url("../images/delivery.jpg");
 }
 
 .address {
   background-color: #e7e7e7;
+  width: 1170px;
+  min-height: 492px;
+  border-radius: 16px;
+  background-image: url("../images/address.jpg");
 }
 
 .blog-text {
@@ -144,10 +181,14 @@ body {
 
 .delivery-form {
   background-color: #fcfcfc;
+  width: 500px;
 }
 
 .address-container {
   background-color: #fcfcfc;
+  width: 343px;
+  min-height: 364px;
+  border-radius: 8px;
 }
 
 .address-text--bold {
@@ -205,10 +246,118 @@ body {
 
 .catalog-card {
   background-color: #fcfcfc;
+  width: 270px;
+  min-height: 281px;
+  border-radius: 8px;
 }
 
 .pagintation-link {
   color: #2d3440;
   line-height: 20px;
   text-decoration: none;
+}
+
+.gifts-item {
+  width: 570px;
+  min-height: 268px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.gifts-item:first-child {
+  background-image: url("../images/raspberry.png");
+}
+
+.gifts-item:nth-child(2) {
+  background-image: url("../images/marshmallow.png");
+}
+
+.button {
+  border-radius: 26px;
+  padding: 10px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.white-button {
+  background-color: #fcfcfc;
+  border: none;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+}
+
+.pink-button {
+  background-color: #ff2f64;
+  color: #fcfcfc;
+  border: none;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+}
+
+.main-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.display-none {
+  display: none;
+}
+
+.gifts-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.popular-taste-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.block-container {
+  display: flex;
+  gap: 30px;
+}
+
+.page-footer {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.catalog-cards {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-container {
+  display: flex;
+}
+
+.production-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
 }

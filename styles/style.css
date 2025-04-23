@@ -55,6 +55,7 @@ body {
 }
 
 .main-navigation {
+  padding: 24px 0;
   width: 1170px;
   display: flex;
   margin: 0 auto;
@@ -67,6 +68,13 @@ body {
 
 .main-user-link {
   font-size: 14px;
+  background-color: rgba(252, 252, 252, 0.3);
+  padding: 6px 16px;
+  border-radius: 30px;
+}
+
+.main-nav-phone {
+  margin: 0;
 }
 
 .slider-title {
@@ -74,12 +82,31 @@ body {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  margin: 0;
+  grid-area: title;
 }
 
 .slider-description {
   color: #2d3440;
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
+  grid-area: text;
+}
+
+.slider-button {
+  grid-area: button;
+  align-self: start;
+  justify-self: start;
+}
+
+.slider-image {
+  grid-area: image;
+}
+
+.preview-container {
+  grid-area: preview;
+  align-self: center;
 }
 
 .title {
@@ -89,15 +116,35 @@ body {
   color: #2d3440;
 }
 
+.gifts {
+  margin-bottom: 81px;
+}
+
+.gifts-title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.popular-taste-title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 56px;
+}
+
 .gifts-item {
   background-color: #FF7799;
   color: #2D3440;
+  padding: 36px;
+  padding-right: 217px;
+  box-sizing: border-box;
 }
 
 .gifts-item-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
 }
 
 .taste-link-title {
@@ -126,8 +173,19 @@ body {
   line-height: 24px;
 }
 
+.delivery-title {
+  margin: 0;
+}
+
 .about-us {
   background-color: #ffffff;
+
+  border: 24px solid #fcc850;
+  border-image-source: url("../images/wafer.jpg");
+  border-image-slice: 40;
+  border-image-repeat: round;
+  padding: 56px 40px;
+  margin-bottom: 80px;
 }
 
 .blog {
@@ -136,13 +194,21 @@ body {
   min-height: 224px;
   background-image: url("../images/blog.jpg");
   border-radius: 16px;
+  padding-left: 32px;
+  padding-right: 170px;
+  box-sizing: border-box;
 }
 
 .subscribe {
   background-color: #ffffff;
   width: 570px;
   min-height: 224px;
+  border: 6px solid #69a9ff;
+  border-image-source: url("../images/subscribe.jpg");
+  border-image-slice: 10;
   border-radius: 16px;
+  padding: 26px;
+  box-sizing: border-box;
 }
 
 .delivery {
@@ -151,6 +217,11 @@ body {
   min-height: 534px;
   border-radius: 16px;
   background-image: url("../images/delivery.jpg");
+  margin-bottom: 80px;
+  display: flex;
+  padding: 64px;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .address {
@@ -182,6 +253,26 @@ body {
 .delivery-form {
   background-color: #fcfcfc;
   width: 500px;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
+}
+
+.delivery-text {
+  margin: 0;
+}
+
+.form-text {
+  margin: 0;
+}
+
+.delivery-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
 }
 
 .address-container {
@@ -196,6 +287,10 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #2d3440;
+}
+
+.address-text {
+  margin: 0;
 }
 
 .production-list {
@@ -300,9 +395,7 @@ body {
   margin: 0 auto;
 }
 
-.display-none {
-  display: none;
-}
+
 
 .gifts-list {
   margin: 0;
@@ -321,9 +414,14 @@ body {
   list-style-type: none;
 }
 
+.popular-taste {
+  margin-bottom: 80px;
+}
+
 .block-container {
   display: flex;
   gap: 30px;
+  margin-bottom: 80px;
 }
 
 .page-footer {
@@ -360,4 +458,191 @@ body {
   padding: 0;
   display: flex;
   list-style-type: none;
+}
+
+.taste-button {
+  background-color: #ff2f64;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.cart-svg {
+  fill:  #fcfcfc;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navigation-icon {
+  fill: #2d3440;
+}
+
+.main-nav-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav-link {
+  display: block;
+  padding: 8px 16px;
+}
+
+.main-user-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+
+.arrow-down {
+  padding-right: 38px;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.slider-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+}
+
+.prev-next-button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #fcfcfc;
+  position: absolute;
+}
+
+.link-telegram {
+  background-image: url("../images/telegram.svg");
+}
+
+.link-vk {
+  background-image: url("../images/vk.svg");
+}
+
+.link-youtube {
+  background-image: url("../images/youtube.svg");
+}
+
+.social-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.social-list {
+  display: flex;
+  list-style-type: none;
+  gap: 14px;
+  grid-area: social;
+  justify-self: end;
+}
+
+.slider-division {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 8px;
+  grid-area: division;
+}
+
+.slider-division-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.slider-division-button-current {
+  background-color: #fcfcfc;
+}
+
+.catalog-filter-group {
+  border: none;
+}
+
+.slider-item {
+  display: grid;
+  grid-template-columns: 500px min-content 241px;
+  grid-template-areas:
+  "title image preview"
+  "text image preview"
+  "button image preview"
+  "division division social";
+  position: relative;
+}
+
+.display-none {
+  display: none;
+}
+
+.about-us-item::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.about-us-item {
+  display: flex;
+  gap: 16px;
+}
+
+.about-us-title {
+  margin: 0;
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.popsicle::before {
+  background-image: url("../images/about-us/popsicle.svg");
+}
+
+.leaf::before {
+  background-image: url("../images/about-us/leaf.svg");
+}
+
+.cow::before {
+  background-image: url("../images/about-us/cow.svg");
+}
+
+.thermometer::before {
+  background-image: url("../images/about-us/thermometer.svg");
+}
+
+.about-us-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

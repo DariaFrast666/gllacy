@@ -129,7 +129,7 @@ body {
 .popular-taste-title {
   text-align: center;
   margin: 0;
-  margin-bottom: 56px;
+  margin-bottom: 107px;
 }
 
 .gifts-item {
@@ -156,14 +156,31 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0;
 }
 
+.taste-description {
+  margin: 0;
+}
 
 .popular-taste-item {
   background-color: #fcfcfc;
   width: 270px;
   min-height: 281px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 24px;
+  box-sizing: border-box;
+  height: 281px;
+  align-items: center;
+  gap: 16px;
+}
+
+.taste-container {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
 }
 
 .taste-price {
@@ -230,6 +247,9 @@ body {
   min-height: 492px;
   border-radius: 16px;
   background-image: url("../images/address.jpg");
+  padding-top: 64px;
+  padding-left: 64px;
+  box-sizing: border-box;
 }
 
 .blog-text {
@@ -257,6 +277,27 @@ body {
   box-sizing: border-box;
   border-radius: 8px;
   box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
+  display: grid;
+  grid-template-columns: 117px 287px;
+  column-gap: 16px;
+}
+
+.delivery-label--date {
+  grid-column: 1 / 2;
+}
+
+.delivery-label--phone {
+  grid-column: 2 / 3;
+}
+
+.delivery-label--address {
+  grid-column: 1 / -1;
+}
+
+.delivery-button {
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: center;
 }
 
 .delivery-text {
@@ -265,6 +306,7 @@ body {
 
 .form-text {
   margin: 0;
+  grid-column: 1 / -1;
 }
 
 .delivery-container {
@@ -280,6 +322,12 @@ body {
   width: 343px;
   min-height: 364px;
   border-radius: 8px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.address-button {
+  width: 250px;
 }
 
 .address-text--bold {
@@ -304,6 +352,17 @@ body {
 
 .production-item:first-child {
   font-weight: 700;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.production-item:first-child::before {
+  content: "";
+  display: block;
+  background-image: url("../images/heart.svg");
+  width: 16px;
+  height: 16px;
 }
 
 .developer-text {
@@ -331,6 +390,11 @@ body {
   color: #2d3440;
   font-size: 14px;
   line-height: 20px;
+  border-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: none;
+  width: 196px;
+  padding: 8px 16px;
 }
 
 .catalog-description {
@@ -344,6 +408,13 @@ body {
   width: 270px;
   min-height: 281px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 24px;
+  box-sizing: border-box;
+  height: 281px;
+  align-items: center;
+  gap: 16px;
 }
 
 .pagintation-link {
@@ -428,6 +499,11 @@ body {
   width: 1170px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+}
+
+.inner-header {
+  margin-bottom: 95px;
 }
 
 .catalog-cards {
@@ -435,7 +511,8 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 91px;
   list-style-type: none;
 }
 
@@ -451,6 +528,25 @@ body {
 .production-list {
   padding: 0;
   list-style-type: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.first-column {
+  grid-column: 1 / 2;
+}
+
+.second-column {
+  grid-column: 2 / 3;
+}
+
+.first-row {
+  grid-row: 1 / 2;
+}
+
+.second-row {
+  grid-row: 2 / 3;
 }
 
 .breadcrumbs {
@@ -645,4 +741,64 @@ body {
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.taste-image {
+  border-radius: 50%;
+}
+
+.taste-link-image {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  margin-top: -51px;
+}
+
+.delivery-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.delivery-input {
+  padding: 14px 16px;
+  box-sizing: border-box;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+
+}
+
+.delivery-input::placeholder {
+  color: #b9b9b9;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  background-image: url("../images/angle-bracket.svg");
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item:last-child {
+  text-decoration: underline;
+}
+
+.catalog-filter-button {
+  border: 2px solid #fcfcfc;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 12px;
+  width: 185px;
 }

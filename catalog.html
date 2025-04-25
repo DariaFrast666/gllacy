@@ -77,62 +77,97 @@
         <h2 class="inner-header-title title">Сливочное мороженое</h2>
 
         <form action="https://echo.htmlacademy.ru/" class="catalog-filter">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Сортировка:</legend>
-            <select class="catalog-select" name="select">
-              <option value="popular" selected>По популярности</option>
-              <option value="cost">По цене</option>
-            </select>
-          </fieldset>
+          <div class="form-top-container">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Сортировка:</legend>
+              <select class="catalog-select" name="select">
+                <option value="popular" selected>По популярности</option>
+                <option value="cost">По цене</option>
+              </select>
+            </fieldset>
 
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-          </fieldset>
+            <fieldset class="catalog-filter-group">
+              <div class="range-wrapper-inputs">
+                <legend class="catalog-filter-title">Цена:</legend>
+                <label class="catalog-label">
+                  <input type="number" class="range-input" value="100" name="min-price">₽
+                </label>
+                <label class="catalog-label">-
+                  <input type="number" class="range-input" value="500" name="min-price">₽
+                </label>
+              </div>
 
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Жирность:</legend>
-            <label class="catalog-label">
-              <input type="radio" class="catalog-input" name="fat-content" value="0">
-              <span class="catalog-description">0%</span>
-            </label>
-            <label class="catalog-label">
-              <input type="radio" class="catalog-input" name="fat-content" value="less 10" checked>
-              <span class="catalog-description">до 10%</span>
-            </label>
-            <label class="catalog-label">
-              <input type="radio" class="catalog-input" name="fat-content" value="less 30">
-              <span class="catalog-description">до 30%</span>
-            </label>
-            <label class="catalog-label">
-              <input type="radio" class="catalog-input" name="fat-content" value="30 and more">
-              <span class="catalog-description">выше 30%</span>
-            </label>
-          </fieldset>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 42px; width: 56px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                      <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4">
+                        <circle cx="2" cy="2" r="2"/>
+                      </svg>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                      <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4">
+                        <circle cx="2" cy="2" r="2"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
 
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Наполнители:</legend>
-            <label class="catalog-label">
-              <input type="checkbox" class="catalog-input" name="chocolat" checked>
-              <span class="catalog-description">шоколадные</span>
-            </label>
-            <label class="catalog-label">
-              <input type="checkbox" class="catalog-input" name="sugar" checked>
-              <span class="catalog-description">сахарные посыпки</span>
-            </label>
-            <label class="catalog-label">
-              <input type="checkbox" class="catalog-input" name="fruits">
-              <span class="catalog-description">фрукты</span>
-            </label>
-            <label class="catalog-label">
-              <input type="checkbox" class="catalog-input" name="syrups">
-              <span class="catalog-description">сиропы</span>
-            </label>
-            <label class="catalog-label">
-              <input type="checkbox" class="catalog-input" name="jams">
-              <span class="catalog-description">джемы</span>
-            </label>
-          </fieldset>
-          <button type="submit" class="catalog-filter-button">Применить</button>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Жирность:</legend>
+              <div class="catalog-container">
+                <label class="catalog-label">
+                  <input type="radio" class="input-radio" name="fat-content" value="0">
+                  <span class="catalog-description">0%</span>
+                </label>
+                <label class="catalog-label">
+                  <input type="radio" class="input-radio" name="fat-content" value="less 10" checked>
+                  <span class="catalog-description">до 10%</span>
+                </label>
+                <label class="catalog-label">
+                  <input type="radio" class="input-radio" name="fat-content" value="less 30">
+                  <span class="catalog-description">до 30%</span>
+                </label>
+                <label class="catalog-label">
+                  <input type="radio" class="input-radio" name="fat-content" value="30 and more">
+                  <span class="catalog-description">выше 30%</span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-bottom-container">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Наполнители:</legend>
+              <div class="catalog-container">
+                <label class="catalog-label">
+                  <input type="checkbox" class="input-check" name="chocolat" checked>
+                  <span class="catalog-description">шоколадные</span>
+                </label>
+                <label class="catalog-label">
+                  <input type="checkbox" class="input-check" name="sugar" checked>
+                  <span class="catalog-description">сахарные посыпки</span>
+                </label>
+                <label class="catalog-label">
+                  <input type="checkbox" class="input-check" name="fruits">
+                  <span class="catalog-description">фрукты</span>
+                </label>
+                <label class="catalog-label">
+                  <input type="checkbox" class="input-check" name="syrups">
+                  <span class="catalog-description">сиропы</span>
+                </label>
+                <label class="catalog-label">
+                  <input type="checkbox" class="input-check" name="jams">
+                  <span class="catalog-description">джемы</span>
+                </label>
+              </div>
+            </fieldset>
+            <button type="submit" class="catalog-filter-button">Применить</button>
+          </div>
         </form>
       </header>
 
@@ -149,6 +184,9 @@
             <span class="taste-price">310 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>
@@ -165,6 +203,9 @@
             <span class="taste-price">340 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>
@@ -181,6 +222,9 @@
             <span class="taste-price">330 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>
@@ -197,6 +241,9 @@
             <span class="taste-price">320 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>
@@ -213,6 +260,9 @@
             <span class="taste-price">330 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>
@@ -229,6 +279,9 @@
             <span class="taste-price">340 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>
@@ -245,6 +298,9 @@
             <span class="taste-price">270 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>
@@ -261,6 +317,9 @@
             <span class="taste-price">300 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>
@@ -277,6 +336,9 @@
             <span class="taste-price">310 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>
@@ -293,6 +355,9 @@
             <span class="taste-price">320 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>
@@ -309,6 +374,9 @@
             <span class="taste-price">360 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>
@@ -325,6 +393,9 @@
             <span class="taste-price">280 ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
+                <path fill-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
+              </svg>
             </button>
           </div>
         </li>

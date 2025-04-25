@@ -383,6 +383,8 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
+  margin-bottom: 8px;
+  margin-left: 16px;
 }
 
 .catalog-select {
@@ -684,6 +686,8 @@ body {
 
 .catalog-filter-group {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .slider-item {
@@ -801,4 +805,131 @@ body {
   line-height: 20px;
   padding: 8px 12px;
   width: 185px;
+  align-self: end;
+}
+
+.catalog-container {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+  padding: 9px 24px;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  background-color: rgba(86, 92, 102, 0.3);
+  width: 164px;
+}
+
+.range {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+  padding: 17px 16px;
+  width: 196px;
+  box-sizing: border-box;
+}
+
+.range-bar {
+  background-color: #565c66;
+  height: 2px;
+  position: absolute;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #2d3440;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-svg {
+  fill: #fcfcfc;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+
+.range-input {
+  width: 30px;
+  font-family: inherit;
+  background-color: transparent;
+  appearance: textfield;
+  border: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.range-input::-webkit-inner-spin-button,
+.range-input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-label {
+  color: #2d3440;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.form-top-container {
+  display: flex;
+  gap: 24px;
+}
+
+.form-bottom-container {
+  display: flex;
+  gap: 16px;
+}
+
+.input-radio {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/form/radio.svg");
+}
+
+.input-radio:checked {
+  background-image: url("../images/form/checked-radio.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.input-check {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/form/checkbox.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.input-check:checked {
+  background-image: url("../images/form/checked-checkbox.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }

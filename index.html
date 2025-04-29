@@ -27,14 +27,19 @@
           <li class="main-nav-phone">
             <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
-          <li class="main-user-item">
+          <li class="main-user-item search-item">
             <a href="#" class="main-user-link search">
               <span class="visually-hidden">Поиск</span>
               <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                 <path fill-rule="evenodd" d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" clip-rule="evenodd"/>
               </svg>
             </a>
-          </li>
+            <div class="popover popover-search">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <label for="search" class="visually-hidden">Поиск по сайту</label>
+                <input class="search-input" id="search" name="search" type="searh" placeholder="Поиск по сайту">
+              </form>
+            </div>
           <li class="main-user-item">
             <a href="#" class="main-user-link">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 16 17">
@@ -42,6 +47,7 @@
               </svg>
               Вход
             </a>
+
           </li>
           <li class="main-user-item">
             <a href="#" class="main-user-link">
@@ -67,20 +73,23 @@
             и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
           <button class="slider-button button white-button" type="button">Заказать</button>
 
-          <img src="images/slider/1.png" alt="Вафельный рожок с белым и розовым шариками мороженого, политый красным сиропом" class="slider-image" width="327px" height="507px">
-
-          <button class="slider-prev-button prev-next-button">
-            <span class="visually-hidden">Предыдущий слайд</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
-              <path fill-rule="evenodd" d="M9.71 13.135a.665.665 0 0 0 .94-.94l-4.2-4.201 4.2-4.202a.665.665 0 0 0-.94-.94L5.042 7.52l-.003.003c-.26.26-.26.681 0 .94l4.671 4.672Z" clip-rule="evenodd"/>
-            </svg>
-          </button>
-          <button class="slider-next-button prev-next-button">
-            <span class="visually-hidden">Следующий слайд</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
-              <path fill-rule="evenodd" d="M7.29 2.865a.665.665 0 1 0-.94.94l4.2 4.201-4.2 4.202a.665.665 0 0 0 .94.94l4.668-4.668.003-.003c.26-.26.26-.681 0-.94L7.29 2.864Z" clip-rule="evenodd"/>
-            </svg>
-          </button>
+          <div class="slider-wrapper">
+            <img src="images/slider/1.png" alt="Вафельный рожок с белым и розовым шариками мороженого, политый красным сиропом" class="slider-image" width="327px" height="507px">
+            <div class="slider-controls">
+              <button class="slider-prev-button prev-next-button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+                <svg class="prev-svg" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+                  <path fill-rule="evenodd" d="M9.71 13.135a.665.665 0 0 0 .94-.94l-4.2-4.201 4.2-4.202a.665.665 0 0 0-.94-.94L5.042 7.52l-.003.003c-.26.26-.26.681 0 .94l4.671 4.672Z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+              <button class="slider-next-button prev-next-button">
+                <span class="visually-hidden">Следующий слайд</span>
+                <svg class="prev-svg" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+                  <path fill-rule="evenodd" d="M7.29 2.865a.665.665 0 1 0-.94.94l4.2 4.201-4.2 4.202a.665.665 0 0 0 .94.94l4.668-4.668.003-.003c.26-.26.26-.681 0-.94L7.29 2.864Z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+          </div>
 
           <div class="preview-container">
             <img class="slider-next-image" src="images/slider/1-preview-2.png" alt="Вафельный рожок с жёлтыми шариками мороженого" width="100" height="150">
@@ -130,13 +139,13 @@
             вам свежесть и наслаждение даже в самый жаркий летний день.</p>
           <button class="slider-button button white-button" type="button">Заказать</button>
 
-          <img src="images/Slider/2.png" alt="Вафельный рожок с жёлтыми шариками мороженого" class="slider-image" width="312px" height="507px">
+          <img src="images/slider/2.png" alt="Вафельный рожок с жёлтыми шариками мороженого" class="slider-image" width="312px" height="507px">
 
           <button class="slider-prev-button"></button>
           <button class="slider-next-button"></button>
 
-          <img class="slider-next-image" src="" alt="Вафельный рожок с карамельными шариками мороженого и мятой">
-          <img class="slider-next-image" src="" alt="Вафельный рожок с белым и розовым шариками мороженого, политый красным сиропом">
+          <img class="slider-next-image" src="images/slider/2-preview-2.png" alt="Вафельный рожок с карамельными шариками мороженого и мятой">
+          <img class="slider-next-image" src="images/slider/2-preview-3.png" alt="Вафельный рожок с белым и розовым шариками мороженого, политый красным сиропом">
 
           <ol class="slider-division">
             <li class="slider-division-item">
@@ -181,13 +190,13 @@
             зефира завоюет сердца сладкоежек всех возрастов. </p>
           <button class="slider-button button white-button" type="button">Заказать</button>
 
-          <img src="images/Slider/3.png"  class="slider-image" alt="Вафельный рожок с карамельными шариками мороженого и мятой" width="350px" width="507px">
+          <img src="images/slider/3.png"  class="slider-image" alt="Вафельный рожок с карамельными шариками мороженого и мятой" width="350px" width="507px">
 
           <button class="slider-prev-button"></button>
           <button class="slider-next-button"></button>
 
-          <img class="slider-next-image" src="" alt="Вафельный рожок с белым и розовым шариками мороженого, политый красным сиропом">
-          <img class="slider-next-image" src="" alt="Вафельный рожок с жёлтыми шариками мороженого">
+          <img class="slider-next-image" src="images/slider/3-preview-2.png" alt="Вафельный рожок с белым и розовым шариками мороженого, политый красным сиропом">
+          <img class="slider-next-image" src="images/slider/3-preview-3.png" alt="Вафельный рожок с жёлтыми шариками мороженого">
 
           <ol class="slider-division">
             <li class="slider-division-item">
@@ -391,7 +400,7 @@
         <div class="address-container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="address-text">Адрес главного офиса и офлайн-магазина:</p>
-          <p class="address-text--bold">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <p class="address-text--bold">наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
           <p class="address-text">Для заказов по телефону:</p>
           <p class="address-text--bold">+7 (812) 812-12-12</p>
           <p class="address-text--small">(с 10 до 20 ежедневно)</p>

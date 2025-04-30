@@ -13,8 +13,25 @@
           <img src="images/logotype.svg" alt="Логотип сайта Глейси">
         </a>
         <ul class="main-nav-list">
-          <li class="main-nav-item">
+          <li class="main-nav-item popover-parent">
             <a href="catalog.html" class="main-nav-link arrow-down">Каталог</a>
+            <ul class="submenu-list popover">
+              <li class="submenu-item">
+                <a href="#" class="submenu-link">Новинки</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-link">Сливочное</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-link">Щербеты</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-link">Фруктовый лед</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-link">Мелорин</a>
+              </li>
+            </ul>
           </li>
           <li class="main-nav-item">
             <a href="#" class="main-nav-link">Доставка и оплата</a>
@@ -28,29 +45,46 @@
             <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="main-user-item search-item">
-            <a href="#" class="main-user-link search">
+            <a href="#" class="main-user-link popover-parent">
               <span class="visually-hidden">Поиск</span>
               <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                 <path fill-rule="evenodd" d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" clip-rule="evenodd"/>
               </svg>
+              <div class="popover popover-search">
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <label for="search" class="visually-hidden">Поиск по сайту</label>
+                  <input class="search-input popover-input" id="search" name="search" type="searh" placeholder="Поиск по сайту">
+                </form>
+              </div>
             </a>
-            <div class="popover popover-search">
-              <form action="https://echo.htmlacademy.ru/" method="post">
-                <label for="search" class="visually-hidden">Поиск по сайту</label>
-                <input class="search-input" id="search" name="search" type="searh" placeholder="Поиск по сайту">
-              </form>
-            </div>
+
           <li class="main-user-item">
-            <a href="#" class="main-user-link">
+            <a href="#" class="main-user-link popover-parent">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 16 17">
                 <path fill-rule="evenodd" d="M9 2.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0 13 13.19V3.858a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 2.525ZM5.862 4.72c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.774l-3.328 3.33a.667.667 0 1 1-.943-.944l2.195-2.195h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 5.663a.667.667 0 0 1 0-.943Z" clip-rule="evenodd"/>
               </svg>
               Вход
+              <div class="popover popover-enter">
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <h2 class="popover-title">Личный кабинет</h2>
+                  <label for="enter-email" class="visually-hidden">Электронная почта</label>
+                  <input id="enter-email" name="enter-email" class="email-input popover-input" type="email" value="email@example.com">
+                  <label for="enter-password" class="visually-hidden">Пароль</label>
+                  <input type="password" id="enter-password" name="enter-password" class="password-input popover-input" value="Пароль">
+                  <div class="enter-container">
+                    <button type="submit" class="pink-button button enter-button">Войти</button>
+                    <div class="button-container">
+                      <button type="button" class="no-button">Забыли пароль?</button>
+                      <button type="button" class="no-button">Регистрация</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </a>
 
           </li>
           <li class="main-user-item">
-            <a href="#" class="main-user-link">
+            <a href="#" class="main-user-link popover-parent">
               <span class="visually-hidden">Корзина</span>
               <span>
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -58,6 +92,37 @@
                 </svg>
                 2 товара
               </span>
+              <div class="popover popover-cart">
+                <h2 class="popover-title">Корзина</h2>
+                <ul class="cart-list">
+                  <li class="cart-item">
+                    <img src="images/popover-cart/1.jpg" alt="" class="cart-image" width="46px" height="46px">
+                    <h3 class="cart-title">Малинка</h3>
+                    <p class="cart-price">1 кг х 310 ₽</p>
+                    <p class="cart-cost">310 ₽</p>
+                    <button type="button" class="delete-button">
+                      <svg class="delete-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <img src="images/popover-cart/2.jpg" alt="" class="cart-image" width="46px" height="46px">
+                    <h3 class="cart-title">Бабл-гам</h3>
+                    <p class="cart-price">1,5 кг х 320 ₽</p>
+                    <p class="cart-cost">480 ₽</p>
+                    <button type="button" class="delete-button">
+                      <svg class="delete-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-container">
+                  <button type="button" class="button pink-button">Оформить заказ</button>
+                  <p class="all-cost">Итого: 790 ₽</p>
+                </div>
+              </div>
             </a>
           </li>
         </ul>

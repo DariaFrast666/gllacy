@@ -93,6 +93,7 @@
                 </svg>
                 2 товара
             </a>
+            <!-- Для отображения нужного варианта поповера корзины добавить/удалить класс popover -->
             <div class="popover popover-cart">
               <h2 class="popover-title">Корзина</h2>
               <ul class="cart-list">
@@ -124,7 +125,9 @@
                 <p class="all-cost">Итого: 790 ₽</p>
               </div>
             </div>
-            <div class="popover popover-cart-empty"></div>
+            <div class="popover-cart-empty">
+              <h3 class="cart-title cart-empty-title">Ваша корзина пока<br> пуста</h3>
+            </div>
           </li>
         </ul>
       </nav>
@@ -393,7 +396,7 @@
           </li>
 
           <li class="popular-taste-item">
-            <a href="" class="taste-link-image" tabindex="-1">
+            <a href="#" class="taste-link-image" tabindex="-1">
               <img class="taste-image" src="images/Catalog/2.jpg" alt="кусочки шоколада на пломбире фисташкового цвета" width="168" height="168">
             </a>
             <a href="#" class="taste-link-title">
@@ -599,11 +602,11 @@
           <h2 class="modal-title">Мы обязательно ответим вам!</h2>
           <form action="https://echo.htmlacademy.ru/" class="modal-form" method="post">
             <label for="modal-name" class="visually-hidden">Имя и фамилия</label>
-            <input type="text" id="modal-name" name="modal-name" placeholder="Имя и фамилия" class="modal-input all-input">
-            <label for="modal-password" class="visually-hidden">Пароль</label>
-            <input type="password" id="modal-password" name="modal-password" class="modal-input all-input" placeholder="email@example.com">
+            <input type="text" id="modal-name" name="modal-name" placeholder="Имя и фамилия" class="modal-input all-input" required>
+            <label for="modal-mail" class="visually-hidden">Email</label>
+            <input type="email" id="modal-mail" name="modal-mail" class="modal-input all-input" placeholder="email@example.com" required>
             <label for="modal-question" class="visually-hidden">Ваш вопрос</label>
-            <textarea name="modal-question" id="modal-question" placeholder="В свободной форме" class="modal-input all-input modal-textarea"></textarea>
+            <textarea name="modal-question" id="modal-question" placeholder="В свободной форме" class="modal-input all-input modal-textarea" required></textarea>
             <button type="submit" class="button pink-button modal-button">Отправить</button>
           </form>
         </section>

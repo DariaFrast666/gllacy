@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="icon" href="favicon.ico">
 
     <link rel="stylesheet" href="styles/style.css">
   </head>
@@ -13,8 +14,25 @@
           <img src="images/logotype.svg" alt="Логотип сайта Глейси">
         </a>
         <ul class="main-nav-list">
-          <li class="main-nav-item">
+          <li class="main-nav-item popover-parent">
             <a href="#" class="main-nav-link arrow-down">Каталог</a>
+            <ul class="submenu-list popover">
+              <li class="submenu-item">
+                <a href="#" class="submenu-link">Новинки</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-link">Сливочное</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-link">Щербеты</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-link">Фруктовый лед</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-link">Мелорин</a>
+              </li>
+            </ul>
           </li>
           <li class="main-nav-item">
             <a href="#" class="main-nav-link">Доставка и оплата</a>
@@ -27,32 +45,85 @@
           <li class="main-nav-phone">
             <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
-          <li class="main-user-item">
-            <a href="#" class="main-user-link search">
+          <li class="main-user-item search-item popover-parent">
+            <a href="#" class="main-user-link">
               <span class="visually-hidden">Поиск</span>
               <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                 <path fill-rule="evenodd" d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" clip-rule="evenodd"/>
               </svg>
             </a>
+            <div class="popover popover-search">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <label for="search" class="visually-hidden">Поиск по сайту</label>
+                <input class="search-input popover-input all-input" id="search" name="search" type="search" placeholder="Поиск по сайту">
+              </form>
+            </div>
           </li>
-          <li class="main-user-item">
+
+          <li class="main-user-item popover-parent">
             <a href="#" class="main-user-link">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 16 17">
                 <path fill-rule="evenodd" d="M9 2.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0 13 13.19V3.858a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 2.525ZM5.862 4.72c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.774l-3.328 3.33a.667.667 0 1 1-.943-.944l2.195-2.195h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 5.663a.667.667 0 0 1 0-.943Z" clip-rule="evenodd"/>
               </svg>
               Вход
             </a>
+            <div class="popover popover-enter">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <h2 class="popover-title">Личный кабинет</h2>
+                <label for="enter-email" class="visually-hidden">Электронная почта</label>
+                <input id="enter-email" name="enter-email" class="email-input all-input popover-input" type="email" value="email@example.com">
+                <label for="enter-password" class="visually-hidden">Пароль</label>
+                <input type="password" id="enter-password" name="enter-password" class="all-input password-input popover-input" value="Пароль">
+                <div class="enter-container">
+                  <button type="submit" class="pink-button button enter-button">Войти</button>
+                  <div class="button-container">
+                    <button type="button" class="no-button">Забыли пароль?</button>
+                    <button type="button" class="no-button">Регистрация</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </li>
-          <li class="main-user-item">
+
+          <li class="main-user-item popover-parent">
             <a href="#" class="main-user-link">
               <span class="visually-hidden">Корзина</span>
-              <span>
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
                   <path fill-rule="evenodd" d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/>
                 </svg>
                 2 товара
-              </span>
             </a>
+            <div class="popover popover-cart">
+              <h2 class="popover-title">Корзина</h2>
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <img src="images/popover-cart/1.jpg" alt="" class="cart-image" width="46" height="46">
+                  <h3 class="cart-title">Малинка</h3>
+                  <p class="cart-price">1 кг х 310 ₽</p>
+                  <p class="cart-cost">310 ₽</p>
+                  <button type="button" class="delete-button">
+                    <svg class="delete-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z" clip-rule="evenodd"/>
+                    </svg>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <img src="images/popover-cart/2.jpg" alt="" class="cart-image" width="46" height="46">
+                  <h3 class="cart-title">Бабл-гам</h3>
+                  <p class="cart-price">1,5 кг х 320 ₽</p>
+                  <p class="cart-cost">480 ₽</p>
+                  <button type="button" class="delete-button">
+                    <svg class="delete-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z" clip-rule="evenodd"/>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <div class="cart-container">
+                <button type="button" class="button pink-button">Оформить заказ</button>
+                <p class="all-cost">Итого: 790 ₽</p>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -81,25 +152,25 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Сортировка:</legend>
               <select class="catalog-select" name="select">
-                <option value="popular" selected>По популярности</option>
-                <option value="cost">По цене</option>
+                <option value="popular" selected>по популярности</option>
+                <option value="cost">по цене</option>
               </select>
             </fieldset>
 
             <fieldset class="catalog-filter-group">
               <div class="range-wrapper-inputs">
-                <legend class="catalog-filter-title">Цена:</legend>
-                <label class="catalog-label">
+                <p class="catalog-filter-title">Цена:</p>
+                <label class="range-label">
                   <input type="number" class="range-input" value="100" name="min-price">₽
                 </label>
-                <label class="catalog-label">-
+                <label class="range-label">-
                   <input type="number" class="range-input" value="500" name="min-price">₽
                 </label>
               </div>
 
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 42px; width: 56px">
+                  <div class="range-bar" style="left: 40px; width: 56px">
                     <button class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену</span>
                       <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4">
@@ -144,23 +215,23 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Наполнители:</legend>
               <div class="catalog-container">
-                <label class="catalog-label">
+                <label class="catalog-label-checkbox">
                   <input type="checkbox" class="input-check" name="chocolat" checked>
                   <span class="catalog-description">шоколадные</span>
                 </label>
-                <label class="catalog-label">
+                <label class="catalog-label-checkbox">
                   <input type="checkbox" class="input-check" name="sugar" checked>
                   <span class="catalog-description">сахарные посыпки</span>
                 </label>
-                <label class="catalog-label">
+                <label class="catalog-label-checkbox">
                   <input type="checkbox" class="input-check" name="fruits">
                   <span class="catalog-description">фрукты</span>
                 </label>
-                <label class="catalog-label">
+                <label class="catalog-label-checkbox">
                   <input type="checkbox" class="input-check" name="syrups">
                   <span class="catalog-description">сиропы</span>
                 </label>
-                <label class="catalog-label">
+                <label class="catalog-label-checkbox">
                   <input type="checkbox" class="input-check" name="jams">
                   <span class="catalog-description">джемы</span>
                 </label>
@@ -174,7 +245,7 @@
      <ul class="catalog-cards">
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/catalog/1.jpg" alt="Розовое мороженое" width="168px" height="168px">
+            <img class="taste-image" src="images/catalog/1.jpg" alt="Розовое мороженое" width="168" height="168">
           </a>
           <a href="#" class="taste-link-title">
             <h3 class="taste-title">Малинка</h3>
@@ -193,14 +264,14 @@
 
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/Catalog/2.jpg" width="168px" height="168px" alt="кусочки шоколада на пломбире фисташкового цвета">
+            <img class="taste-image" src="images/Catalog/2.jpg" width="168" height="168" alt="кусочки шоколада на пломбире фисташкового цвета">
           </a>
           <a href="" class="taste-link-title">
             <h3 class="taste-title">Фисташка</h3>
           </a>
           <p class="taste-description">Фисташковый пломбир с кусочками шоколада</p>
           <div class="taste-container">
-            <span class="taste-price">340 ₽/кг</span>
+            <span class="taste-price">340&nbsp; ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
               <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -212,14 +283,14 @@
 
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/Catalog/3.jpg" width="168px" height="168px" alt="Белое мороженое с черничными разводами">
+            <img class="taste-image" src="images/Catalog/3.jpg" width="168" height="168" alt="Белое мороженое с черничными разводами">
           </a>
           <a href="" class="taste-link-title">
             <h3 class="taste-title">Черника</h3>
           </a>
-          <p class="taste-description">Крем-брюле с черничным джемом</p>
+          <p class="taste-description">Крем-брюле<br> с черничным джемом</p>
           <div class="taste-container">
-            <span class="taste-price">330 ₽/кг</span>
+            <span class="taste-price">330&nbsp; ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
               <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -231,14 +302,14 @@
 
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/Catalog/4.jpg" width="168px" height="168px" alt="Голубое мороженое с радужной посыпкой">
+            <img class="taste-image" src="images/Catalog/4.jpg" width="168" height="168" alt="Голубое мороженое с радужной посыпкой">
           </a>
           <a href="" class="taste-link-title">
             <h3 class="taste-title">Бабл-гам</h3>
           </a>
-          <p class="taste-description">Ванильный пломбир со сладкой посыпкой</p>
+          <p class="taste-description">Ванильный пломбир<br> со сладкой посыпкой</p>
           <div class="taste-container">
-            <span class="taste-price">320 ₽/кг</span>
+            <span class="taste-price">320&nbsp; ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
               <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -250,14 +321,14 @@
 
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/Catalog/5.jpg" width="168px" height="168px" alt="Белое мороженое с лиловыми вкраплениями">
+            <img class="taste-image" src="images/Catalog/5.jpg" width="168" height="168" alt="Белое мороженое с лиловыми вкраплениями">
           </a>
           <a href="" class="taste-link-title">
             <h3 class="taste-title">Ежевика</h3>
           </a>
           <p class="taste-description">Сливочное мороженое с ежевичным джемом</p>
           <div class="taste-container">
-            <span class="taste-price">330 ₽/кг</span>
+            <span class="taste-price">330&nbsp; ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
               <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -269,14 +340,14 @@
 
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/Catalog/6.jpg" width="168px" height="168px" alt="Жёлтое мороженое">
+            <img class="taste-image" src="images/Catalog/6.jpg" width="168" height="168" alt="Жёлтое мороженое">
           </a>
           <a href="" class="taste-link-title">
             <h3 class="taste-title">Банан</h3>
           </a>
-          <p class="taste-description">Сливочный пломбир с банановым вкусом</p>
+          <p class="taste-description">Сливочный пломбир<br> с банановым вкусом</p>
           <div class="taste-container">
-            <span class="taste-price">340 ₽/кг</span>
+            <span class="taste-price">340&nbsp; ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
               <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -288,14 +359,14 @@
 
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/Catalog/7.jpg" width="168px" height="168px" alt="Мороженое шоколадного цвета">
+            <img class="taste-image" src="images/Catalog/7.jpg" width="168" height="168" alt="Мороженое шоколадного цвета">
           </a>
           <a href="" class="taste-link-title">
             <h3 class="taste-title">Шоколадка</h3>
           </a>
           <p class="taste-description">Классический шоколадный пломбир</p>
           <div class="taste-container">
-            <span class="taste-price">270 ₽/кг</span>
+            <span class="taste-price">270&nbsp; ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
               <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -307,14 +378,14 @@
 
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/Catalog/8.jpg" width="168px" height="168px" alt="Бледно-розовое мороженое">
+            <img class="taste-image" src="images/Catalog/8.jpg" width="168" height="168" alt="Бледно-розовое мороженое">
           </a>
           <a href="" class="taste-link-title">
             <h3 class="taste-title">Клубничка</h3>
           </a>
-          <p class="taste-description">Сливочный пломбир с клубничным вкусом</p>
+          <p class="taste-description">Сливочный пломбир<br> с клубничным вкусом</p>
           <div class="taste-container">
-            <span class="taste-price">300 ₽/кг</span>
+            <span class="taste-price">300&nbsp; ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
               <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -326,14 +397,14 @@
 
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/Catalog/9.jpg" width="168px" height="168px" alt="Жёлто-зеленое мороженое">
+            <img class="taste-image" src="images/Catalog/9.jpg" width="168" height="168" alt="Жёлто-зеленое мороженое">
           </a>
           <a href="" class="taste-link-title">
             <h3 class="taste-title">Лимон</h3>
           </a>
           <p class="taste-description">Освежающий лимонный сорбет</p>
           <div class="taste-container">
-            <span class="taste-price">310 ₽/кг</span>
+            <span class="taste-price">310&nbsp; ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
               <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -345,14 +416,14 @@
 
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/Catalog/10.jpg" width="168px" height="168px" alt="Бледно-голубое мороженое">
+            <img class="taste-image" src="images/Catalog/10.jpg" width="168" height="168" alt="Бледно-голубое мороженое">
           </a>
           <a href="" class="taste-link-title">
             <h3 class="taste-title">Ментол</h3>
           </a>
-          <p class="taste-description">Сливочный пломбир с ментоловым сиропом</p>
+          <p class="taste-description">Сливочный пломбир<br> с ментоловым сиропом</p>
           <div class="taste-container">
-            <span class="taste-price">320 ₽/кг</span>
+            <span class="taste-price">320&nbsp; ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
               <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -364,14 +435,14 @@
 
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/Catalog/11.jpg" width="168px" height="168px" alt="Фисташковое мороженое, политое шоколадным сиропом">
+            <img class="taste-image" src="images/Catalog/11.jpg" width="168" height="168" alt="Фисташковое мороженое, политое шоколадным сиропом">
           </a>
           <a href="" class="taste-link-title">
             <h3 class="taste-title">Орешек</h3>
           </a>
           <p class="taste-description">Фисташковый пломбир с шоколадным сиропом</p>
           <div class="taste-container">
-            <span class="taste-price">360 ₽/кг</span>
+            <span class="taste-price">360&nbsp; ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
               <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -383,14 +454,14 @@
 
         <li class="catalog-card">
           <a href="#" class="taste-link-image" tabindex="-1">
-            <img class="taste-image" src="images/Catalog/12.jpg" width="168px" height="168px" alt="Розово-коричневое мороженое">
+            <img class="taste-image" src="images/Catalog/12.jpg" width="168" height="168" alt="Розово-коричневое мороженое">
           </a>
           <a href="" class="taste-link-title">
             <h3 class="taste-title">Крем-брюле</h3>
           </a>
-          <p class="taste-description">Классическое крем-брюле </p>
+          <p class="taste-description">Классическое<br> крем-брюле </p>
           <div class="taste-container">
-            <span class="taste-price">280 ₽/кг</span>
+            <span class="taste-price">280&nbsp; ₽/кг</span>
             <button class="taste-button" type="button">
               <span class="visually-hidden">Купить</span>
               <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" viewBox="0 0 15 14">
@@ -411,22 +482,22 @@
           </a>
         </li>
         <li class="pagination-item">
-          <a href="#" class="pagintation-link pagination-current">1</a>
+          <a href="#" class="pagintation-link pagination-current link-state">1</a>
         </li>
         <li class="pagination-item">
-          <a href="#" class="pagintation-link">2</a>
+          <a href="#" class="pagintation-link link-state">2</a>
         </li>
         <li class="pagination-item">
-          <a href="#" class="pagintation-link">3</a>
+          <a href="#" class="pagintation-link link-state">3</a>
         </li>
         <li class="pagination-item">
-          <a href="#" class="pagintation-link">4</a>
+          <a href="#" class="pagintation-link link-state">4</a>
         </li>
         <li class="pagination-item">
-          <a href="#" class="pagintation-link">5</a>
+          <a href="#" class="pagintation-link link-state">5</a>
         </li>
         <li class="pagination-item">
-          <a href="#" class="pagintation-link pagination-next">
+          <a href="#" class="pagination-next pagintation-link">
             <span class="visually-hidden">Следующая страница</span>
           </a>
         </li>
@@ -437,40 +508,42 @@
     <footer class="page-footer">
       <ul class="social-list">
         <li class="social-item">
-          <a href="#" class="social-link link-telegram">
+          <a href="https://t.me/htmlacademy" class="social-link link-telegram">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="social-item">
-          <a href="#" class="social-link link-vk">
+          <a href="https://vk.com/htmlacademy" class="social-link link-vk">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-item">
-          <a href="#" class="social-link link-youtube">
+          <a href="https://www.youtube.com/user/htmlacademyru" class="social-link link-youtube">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
 
       <ul class="production-list">
-        <li class="production-item first-column first-row">
-          <a href="#" class="production-link">Для поставщиков</a>
+        <li class="production-item">
+          <a href="#" class="production-link active-link">Для поставщиков</a>
         </li>
-        <li class="production-item first-column second-row">
-          <a href="#" class="production-link">О производстве</a>
-        </li>
-        <li class="production-item second-column first-row">
+        <li class="production-item">
           <a href="#" class="production-link">Наши документы</a>
         </li>
-        <li class="production-item second-column second-row">
+        <li class="production-item">
+          <a href="#" class="production-link">О производстве</a>
+        </li>
+        <li class="production-item">
           <a href="#" class="production-link">Экологические стандарты</a>
         </li>
       </ul>
 
       <div class="developer">
-          <img src="images/logo-htmlacademy.svg" alt="" class="developer-image" width="93px" height="27px">
-         <p class="developer-text">Сделано в .html academy © 2021</p>
+        <a href="https://htmlacademy.ru/" class="developer-link">
+          <img src="images/logo-htmlacademy.svg" alt="" class="developer-image" width="93" height="27">
+        </a>
+        <p class="developer-text">Сделано в <a href="https://htmlacademy.ru/" class="text-decoration">.html academy</a> © 2021</p>
       </div>
     </footer>
   </body>
